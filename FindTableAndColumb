@@ -1,0 +1,5 @@
+SELECT count(*) FROM sqlite_master WHERE type='table' AND name ='artist';
+PRAGMA table_info('artists')
+SELECT COUNT(*) AS CNTREC FROM pragma_table_info('artists') WHERE name='Name'
+SELECT COUNT(*) AS CNTREC FROM pragma_table_info('artists') WHERE name='ArtistId' and pk =1
+SELECT COUNT(*) AS CNTREC FROM pragma_table_info('artists') WHERE name='Name'and name= 'ArtistId'
